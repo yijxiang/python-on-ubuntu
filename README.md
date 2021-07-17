@@ -75,6 +75,67 @@ Python 3.8.10
 安装开发环境包
 
 
+## 安装最新的Python 3.9
+
+
+安装完成需要使用python3.9使用该版本，系统版本还是3.8的。
+
+```
+sudo apt-get install python3.9 --fix-missing
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base libevent-core-2.1-7 libevent-pthreads-2.1-7 libidn11 libopts25 sntp ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libpython3.9-minimal libpython3.9-stdlib python3.9-minimal
+Suggested packages:
+  python3.9-venv python3.9-doc binfmt-support
+The following NEW packages will be installed:
+  libpython3.9-minimal libpython3.9-stdlib python3.9 python3.9-minimal
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4,977 kB of archives.
+After this operation, 19.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython3.9-minimal amd64 3.9.5-3~20.04.1 [756 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.9-minimal amd64 3.9.5-3~20.04.1 [2,022 kB]                              
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libpython3.9-stdlib amd64 3.9.5-3~20.04.1 [1,776 kB]                            
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.9 amd64 3.9.5-3~20.04.1 [423 kB]                                        
+Fetched 4,977 kB in 48s (104 kB/s)                                                                                                                  
+Selecting previously unselected package libpython3.9-minimal:amd64.
+(Reading database ... 196140 files and directories currently installed.)
+Preparing to unpack .../libpython3.9-minimal_3.9.5-3~20.04.1_amd64.deb ...
+Unpacking libpython3.9-minimal:amd64 (3.9.5-3~20.04.1) ...
+Selecting previously unselected package python3.9-minimal.
+Preparing to unpack .../python3.9-minimal_3.9.5-3~20.04.1_amd64.deb ...
+Unpacking python3.9-minimal (3.9.5-3~20.04.1) ...
+Selecting previously unselected package libpython3.9-stdlib:amd64.
+Preparing to unpack .../libpython3.9-stdlib_3.9.5-3~20.04.1_amd64.deb ...
+Unpacking libpython3.9-stdlib:amd64 (3.9.5-3~20.04.1) ...
+Selecting previously unselected package python3.9.
+Preparing to unpack .../python3.9_3.9.5-3~20.04.1_amd64.deb ...
+Unpacking python3.9 (3.9.5-3~20.04.1) ...
+Setting up libpython3.9-minimal:amd64 (3.9.5-3~20.04.1) ...
+Setting up python3.9-minimal (3.9.5-3~20.04.1) ...
+Setting up libpython3.9-stdlib:amd64 (3.9.5-3~20.04.1) ...
+Setting up python3.9 (3.9.5-3~20.04.1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+dnac@ubuntu20:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+dnac@ubuntu20:~$ python3.9
+Python 3.9.5 (default, May 19 2021, 11:32:47) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+dnac@ubuntu20:~$ 
+```
+
+
 ##### 资源清单
 
 [How To Install Python 3 and Set Up a Programming Environment on an Ubuntu 20.04 Server](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-20-04-server)
