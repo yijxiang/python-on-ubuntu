@@ -1,7 +1,6 @@
-### 虚拟环境设置
+### Python 虚拟环境设置
 
 - sudo apt-get install -y python3-venv
-
 
 
 ```
@@ -34,4 +33,51 @@ Setting up python3.8-venv (3.8.10-0ubuntu1~20.04) ...
 Setting up python3-venv (3.8.2-0ubuntu2) ...
 Processing triggers for man-db (2.9.1-1) ...
 ```
+
+
+-  python3 -m venv  venv
+
+创建venv目录，python虚拟环境目录，最后的目录名称可以自定义
+
+``` 
+python3 -m venv  venv
+ls venv
+bin  include  lib  lib64  pyvenv.cfg  share
+
+```
+
+- 进入虚拟环境，查看初始package、python版本
+
+```
+source venv/bin/activate
+(venv) dnac@ubuntu20:~$ 
+(venv) dnac@ubuntu20:~$ 
+(venv) dnac@ubuntu20:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+(venv) dnac@ubuntu20:~$ python
+Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+(venv) dnac@ubuntu20:~$ pip list
+Package       Version
+------------- -------
+pip           20.0.2 
+pkg-resources 0.0.0  
+setuptools    44.0.0 
+```
+
+- deactivate 退出python虚拟环境
+
+```
+deactivate
+dnac@ubuntu20:~/venv/bin$ 
+
+```
+
+
+
 
