@@ -35,3 +35,14 @@ license smart deregister
 ```  
   show history all | i license
 ```
+
+ ### URL 资源
+  
+- [Create Templates to Automate Device Configuration Changes](https://www.cisco.com/c/en/us/td/docs/cloud-systems-management/network-automation-and-management/dna-center/2-1-2/user_guide/b_cisco_dna_center_ug_2_1_2/b_cisco_dna_center_ug_2_1_1_chapter_01000.html)
+  
+-  [Jinja2](https://www.palletsprojects.com/p/jinja/)
+  
+- [DNAC-TemplateProgrammer](https://github.com/CiscoDevNet/DNAC-TemplateProgrammer)
+  
+  
+  
