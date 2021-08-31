@@ -15,6 +15,7 @@
 先创建3个文件：
 
 - hosts
+
 该文件内容为，其格式为ini：
 
 ```
@@ -26,6 +27,7 @@ dnac_server
 - credentials.yml
 
 该文件内容为YAML格式的文件，请按实际情况修改其具体参数：
+
 ```
 ---
 dnac_host: <A.B.C.D>
@@ -40,7 +42,7 @@ dnac_debug: False     # optional, defaults to False
 
 - main.yml
 
-该文件内容为YAML格式的文件：
+该文件内容为YAML格式的文件，主要是ansible task，实现从DNAC中获取设备资产信息表：
 
 ```
 ---
@@ -75,7 +77,7 @@ ansible-playbook -i hosts main.yml
 
 
 
-### links
+### 参考链接 links
 
 - [ Ansible Galaxy: https://galaxy.ansible.com/cisco/dnac ](https://galaxy.ansible.com/cisco/dnac)
 - [ Ansible Modules for DNA Center 使用手册 ](https://developer.cisco.com/docs/dna-center/?utm_campaign=dnac-padm&utm_source=padm-ww&utm_medium=dnac-blog-docs#!ansible )
