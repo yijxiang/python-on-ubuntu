@@ -5,8 +5,8 @@
 Ansible 只需要安装 ubuntu 20.04 自带的python3.8系统即可，当然Python 3.9应该也是OK的。
 
 进入到Python虚拟环境之后，就按照下面的 Ansible Galaxy 官方说明，安装下述 packages：
-- sudo pip install ansible
-- sudo pip install dnacentersdk
+-  pip install ansible
+-  pip install dnacentersdk
 - ansible-galaxy collection install cisco.dnac
 
 安装完成可以通过 pip list，ansible --version 等命令检查是否正常。
