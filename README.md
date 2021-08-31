@@ -1,10 +1,10 @@
-# 如何在ubuntu 20.04 系统中安装最新的python3
+# 如何在ubuntu 20.04 系统中安装Python
 
 ## ubuntu APT方法安装系统自带Python
 
-先升级，再检查python3版本，2010.07 系统更新之后，python3 版本为3.8.10
+升级系统之后，再进行检查Python3版本，2010.07 系统更新之后，python3 版本为3.8.10
 
-- sudo apt update
+- sudo apt update   系统升级检查
 
 ```
 sudo apt update
@@ -32,7 +32,7 @@ Reading state information... Done
 
 ```
 
-- sudo apt-get -y upgrade
+- sudo apt-get -y upgrade    系统升级命令
 
 
 ```
@@ -61,7 +61,7 @@ Setting up ubuntu-release-upgrader-core (1:20.04.35) ...
 Processing triggers for man-db (2.9.1-1) ...
 ```
 
-- python3 -V
+- python3 -V  检查Python3 版本：
 
 ```
 python3 -V
@@ -69,16 +69,18 @@ Python 3.8.10
 ```
 
 - sudo apt-get install -y python3-pip
-安装PIP3
+安装PIP3 包管理组件
 
 - sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
-安装开发环境包
+安装Python开发环境包
+
+以上为安装和升级系统自带的Python方法，升级完成之后，可以看到ubuntu 20.04自带的Python3 版本为3.8.10。
 
 
 ## 安装最新的Python 3.9
 
-
-安装完成需要使用python3.9使用该版本，系统版本还是3.8的。
+如何在ubuntu 20上安装Python 3.9.x系统呢？
+安装完成如果计划使用3.9.x，则命令不同，python3.9，系统自带的版本还是3.8的（可以通过命令：python3 得到）。
 
 ```
 sudo apt-get install python3.9 --fix-missing
@@ -134,6 +136,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 dnac@ubuntu20:~$ 
 ```
+
+通过以上方法，可以在ubuntu 20中安装最新的Python 3.9.5的版本。
 
 
 ##### 资源清单
