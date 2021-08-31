@@ -1,6 +1,7 @@
 ## 安装方法
 
-先安装、设置Python虚拟环境。
+[ 先安装、设置Python虚拟环境 ] ( https://github.com/yijxiang/python-on-ubuntu/blob/main/Python%20虚拟环境%20-%20venv.md )
+
 
 之后，按照Ansible Galaxy 说明，安装下述packages：
 - sudo pip install ansible
